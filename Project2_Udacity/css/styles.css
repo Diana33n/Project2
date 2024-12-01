@@ -1,0 +1,72 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.7;
+    color: #fff;
+    background-color: #333;
+    padding-top: 70px; /* Adjusted to account for the header height */
+}
+
+/* Header and Nav Styles */
+.page_header {
+    position: fixed; /* Make the header fixed */
+    top: 0; /* Align to the top */
+    width: 100%; /* Full width */
+    background: #222222;
+    padding: 10px 20px;
+    text-align: center;
+    z-index: 1001; /* Ensure it's above other content */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Content Styles */
+section {
+    padding: 150px;
+    margin: 35px;
+    background: #444;
+    border-radius: 8px;
+}
+
+.landing__container {
+    padding: 30px;
+    border-left: 4px solid teal;
+}
+
+/* Section Header Styles */
+section h2 {
+    color: #fff; /* Ensures section headers are white */
+}
+
+/* Footer Styles */
+.page_footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #222;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+.hide {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
